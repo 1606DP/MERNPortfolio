@@ -8,7 +8,7 @@ function Experiences() {
     <div>
       <SectionTitle title="Experiences" />
       <div className="flex py-10 gap-20 sm:flex-col">
-        <div className="flex flex-col gap-10 border-l-2 border-[#135e4c82] w-1/3 sm:flex-row sm:overflow-scroll sm:w-full">
+        <div className="flex flex-col gap-10 border-l-2 border-[#135e4c82] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
           {experiences.map((experiences, index) => (
             <div
               onClick={() => {
@@ -25,13 +25,18 @@ function Experiences() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-10"> 
-          <h1 className="text-secondary text-xl">{experiences[selectedItemIndex].title}</h1>
-          <h1 className="text-tertiary text-xl">{experiences[selectedItemIndex].company}</h1>
+        <div className="flex flex-col gap-10">
+          <h1 className="text-secondary text-xl">
+            {experiences[selectedItemIndex].title}
+          </h1>
+          <h1 className="text-tertiary text-xl">
+            {experiences[selectedItemIndex].company}
+          </h1>
           <p className="text-white">
             Hi! I'm a passionate Computer Science student with a strong interest
             in software development, algorithms, and innovative technologies. I
-            love solving problems and building meaningful projects.</p>
+            love solving problems and building meaningful projects.
+          </p>
         </div>
       </div>
     </div>
