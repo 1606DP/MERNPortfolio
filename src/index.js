@@ -1,14 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import Header from '../../components/Header'
+import Intro from './Intro'
+import About from './About'
+import Experiences from './Experiences'
+import Education from './Education'
+import Projects from './Projects'
+import Contact from './Contact'
+import Footer from './Footer'
+import LeftSider from './LeftSider'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Home() {
+  return (
+    <div>
+      <Header />
+      <div className='bg-primary px-40 sm:px-5'>
+        <Intro />
+        <About />
+        <Experiences />
+        <Education />
+        <Projects />
+        <Contact />
+        <Footer />
+        <LeftSider />
+      </div>
+    </div>
+  )
+}
 
-
+export default Home
